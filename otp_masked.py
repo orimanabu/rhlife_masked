@@ -9,7 +9,7 @@ import hmac
 import struct
 import base64
 
-counter_file = '/path/to/hotp_counter.txt'
+counter_file = '/PATH/TO/hotp_counter.txt'
 secret = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX====' # from decoded QR code
 pin = 'YYYYYYYY'
 

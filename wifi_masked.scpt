@@ -35,7 +35,7 @@ tell application "System Events"
 				delay 0.1 -- wait for password field to appear
 				keystroke "USERNAME"
 				keystroke tab
-				do shell script "/path/to/otp.py | pbcopy"
+				do shell script "/PATH/TO/otp.py | pbcopy"
 				keystroke "v" using command down
 				keystroke tab
 				keystroke tab

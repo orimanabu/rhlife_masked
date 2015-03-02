@@ -11,7 +11,7 @@ tell application "System Events"
 		end if
 	end tell
 
-	do shell script "/path/to/otp.py | pbcopy"
+	do shell script "/PATH/TO/otp.py | pbcopy"
 
 	tell current location of network preferences
 		delay 1
