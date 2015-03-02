@@ -37,9 +37,9 @@ tell application "System Events"
 				keystroke tab
 				do shell script "/path/to/otp.py | pbcopy"
 				keystroke "v" using command down
-				-- keystroke tab
-				-- keystroke tab
-				-- keystroke space
+				keystroke tab
+				keystroke tab
+				keystroke space
 				keystroke return
 			end tell
 		end tell
