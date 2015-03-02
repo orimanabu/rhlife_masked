@@ -33,8 +33,12 @@ def get_hotp(secret, counter):
     result = '{0:06d}'.format(sn % 10 ** 6)
     return result
 
-if __name__ == '__main__':
+def get_pin_otp():
     counter = get_counter(counter_file)
 #    print '%s%s' % (pin, get_hotp(secret, counter))
-    sys.stdout.write(pin + get_hotp(secret, counter))
     update_counter(counter_file, counter + 1)
+    return pin + get_hotp(secret, counter)
+
+
+if __name__ == '__main__':
+    sys.stdout.write(get_pin_otp())
